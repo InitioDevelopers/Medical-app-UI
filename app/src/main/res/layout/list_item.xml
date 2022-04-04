@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginTop="8dp">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/list_item"
+      android:padding="5dp"
+      android:layout_marginTop="7dp"
+      android:weightSum="100"
+      tools:context=".activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/imageList"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:src="@drawable/doctor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
+        android:background="#F6FAFF"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Dr.Ahmod Miya"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/heartimage" />
+
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextViewSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Specialist" />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:paddingBottom="5dp"
+          android:orientation="horizontal">
+
+
+        <android.widget.RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:text="5.0"
+          android:layout_marginLeft="5dp"
+          android:textColor="#145594"/>
+
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
